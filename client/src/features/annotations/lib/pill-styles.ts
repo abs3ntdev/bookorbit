@@ -13,6 +13,7 @@ export const SOURCE_PILLS: Record<AnnotationOrigin, PillStyle> = {
   web: { label: 'Web', class: 'border-[var(--pill-web)]/40 bg-[var(--pill-web)]/10 text-[var(--pill-web)]' },
   koreader: { label: 'KOReader', class: 'border-[var(--pill-koreader)]/40 bg-[var(--pill-koreader)]/10 text-[var(--pill-koreader)]' },
   kobo: { label: 'Kobo', class: 'border-[var(--pill-kobo)]/40 bg-[var(--pill-kobo)]/10 text-[var(--pill-kobo)]' },
+  crosspoint: { label: 'CrossPoint', class: 'border-[var(--pill-crosspoint)]/40 bg-[var(--pill-crosspoint)]/10 text-[var(--pill-crosspoint)]' },
 }
 
 const STATUS_QUIET = 'border-border bg-muted text-muted-foreground'
