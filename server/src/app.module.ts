@@ -84,6 +84,7 @@ import { EntityManagerModule } from './modules/entity-manager/entity-manager.mod
 import { FontModule } from './modules/font/font.module';
 import { ServerFontModule } from './modules/server-font/server-font.module';
 import { KoreaderModule } from './modules/koreader/koreader.module';
+import { CrosspointModule } from './modules/crosspoint/crosspoint.module';
 import { AppInfoModule } from './modules/app-info/app-info.module';
 import { ReleaseNotesModule } from './modules/release-notes/release-notes.module';
 import { AchievementModule } from './modules/achievement/achievement.module';
@@ -208,6 +209,7 @@ import { StoryEditsModule } from './modules/story-edits/story-edits.module';
     FontModule,
     ServerFontModule,
     KoreaderModule,
+    CrosspointModule,
     AppInfoModule,
     ReleaseNotesModule,
     AchievementModule,

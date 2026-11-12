@@ -8,6 +8,6 @@ import { TextLocatorService } from './text-locator.service';
 
 @Module({
   providers: [EpubDomService, KepubDomService, KoboSpanConverterService, PositionConverterService, TextLocatorService],
-  exports: [PositionConverterService, KoboSpanConverterService, TextLocatorService],
+  exports: [PositionConverterService, KoboSpanConverterService, TextLocatorService, EpubDomService],
 })
 export class PositionConverterModule {}
