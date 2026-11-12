@@ -350,7 +350,7 @@ function shouldSeparateMetadataItem(index: number): boolean {
             {{ jumpFileFormat }}
           </span>
           <span :class="[PILL_CLASS, originPill.class]">
-            <Smartphone v-if="annotation.origin === 'koreader' || annotation.origin === 'kobo'" :size="10" />
+            <Smartphone v-if="annotation.origin === 'koreader' || annotation.origin === 'kobo' || annotation.origin === 'crosspoint'" :size="10" />
             {{ originPill.label }}
           </span>
           <Tooltip v-if="positionPill">

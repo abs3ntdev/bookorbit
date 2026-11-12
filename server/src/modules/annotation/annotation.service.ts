@@ -77,7 +77,7 @@ export class AnnotationService {
           style: dto.style,
           note: dto.note,
           chapterTitle: dto.chapterTitle,
-          origin: dto.origin as 'web' | 'koreader' | 'kobo',
+          origin: dto.origin as 'web' | 'koreader' | 'kobo' | 'crosspoint',
           positionStatus: dto.positionStatus as AnnotationListResponse['items'][number]['positionStatus'],
           chapterIndex: dto.chapterIndex,
           highlightedAt: dto.highlightedAt.toISOString(),

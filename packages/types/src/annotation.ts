@@ -93,7 +93,7 @@ export interface AnnotationItem {
   style: string;
   note: string | null;
   chapterTitle: string | null;
-  origin: "web" | "koreader" | "kobo";
+  origin: "web" | "koreader" | "kobo" | "crosspoint";
   positionStatus: AnnotationPositionStatus | null;
   chapterIndex: number | null;
   highlightedAt: string;

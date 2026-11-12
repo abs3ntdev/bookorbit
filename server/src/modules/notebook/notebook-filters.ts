@@ -2,7 +2,7 @@ import { NOTEBOOK_ENTRY_KINDS, type ContentFilterRules, type NotebookEntryKind }
 
 import { buildSearchPattern } from '../../common/utils/accent-insensitive-search.utils';
 
-export const NOTEBOOK_ORIGINS = ['web', 'koreader', 'kobo'] as const;
+export const NOTEBOOK_ORIGINS = ['web', 'koreader', 'kobo', 'crosspoint'] as const;
 export type NotebookOrigin = (typeof NOTEBOOK_ORIGINS)[number];
 
 /** Ties between entries written in the same microsecond break on kind, in this order. */

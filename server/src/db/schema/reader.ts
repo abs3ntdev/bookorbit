@@ -548,7 +548,7 @@ export const annotations = pgTable(
     style: varchar('style', { length: 20 }).notNull().default('highlight'),
     note: text('note'),
     chapterTitle: varchar('chapter_title', { length: 500 }),
-    origin: varchar('origin', { length: 10 }).$type<'web' | 'koreader' | 'kobo'>().notNull().default('web'),
+    origin: varchar('origin', { length: 10 }).$type<'web' | 'koreader' | 'kobo' | 'crosspoint'>().notNull().default('web'),
     // Bumped on every content mutation (edit, soft delete, restore, device position
     // correction); annotation_sync_state.lastAppliedVersion tracks per-device delivery.
     version: integer('version').notNull().default(1),
@@ -587,7 +587,7 @@ export const annotations = pgTable(
       .on(t.userId, t.bookId, sql`coalesce(${t.sourceCreatedAt}, ${t.createdAt}) desc`, t.id.desc())
       .where(sql`${t.deletedAt} is null`),
     check('annotations_style_chk', sql`${t.style} in ('highlight', 'underline', 'strikethrough', 'squiggly', 'invert')`),
-    check('annotations_origin_chk', sql`${t.origin} in ('web', 'koreader', 'kobo')`),
+    check('annotations_origin_chk', sql`${t.origin} in ('web', 'koreader', 'kobo', 'crosspoint')`),
   ],
 );
 

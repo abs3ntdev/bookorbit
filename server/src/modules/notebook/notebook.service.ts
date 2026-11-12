@@ -53,7 +53,7 @@ type EntryRef = Pick<NotebookEntryKey, 'kindRank' | 'id'>;
 type LoadOptions = NotebookMapOptions & { status: 'active' | 'trashed' };
 
 const TRASH_KINDS: NotebookEntryKind[] = ['highlight', 'journal'];
-const OVERVIEW_ORIGINS = new Set<string>(['web', 'koreader', 'kobo']);
+const OVERVIEW_ORIGINS = new Set<string>(['web', 'koreader', 'kobo', 'crosspoint']);
 
 function entryMapKey(kind: NotebookEntryKind, id: number): string {
   return `${kind}:${id}`;
